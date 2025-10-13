@@ -1,10 +1,12 @@
 ﻿using mf_dev_backend_2025.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 
 namespace mf_dev_backend_2025.Controllers
 {
+    [Authorize]
     public class VeiculosController : Controller
     {
         public readonly ILogger<VeiculosController> _logger;
